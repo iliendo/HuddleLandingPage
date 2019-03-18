@@ -10,7 +10,7 @@ h1 {
 p {
     font-family: 'Open-Sans', sans-serif;
     color: #ffffff;
-    font-weight: 100; 
+    font-weight: 100;
 }
 
 footer {
@@ -21,7 +21,8 @@ button {
     background-color: #ffffff;
     border-radius: 25em;
     padding: 1em 6em 1em 6em;
-
+    box-shadow: 0em 0.2em 0.5em 0em #333333;
+    font-weight: 100;
     /* Font */
     font-family: 'Open-Sans', sans-serif;
     color: rgb(103, 75, 175);
@@ -31,34 +32,38 @@ button {
 @media only screen and (max-width: 500px) {
     body {
         background-image: url(/images/bg-mobile.svg);
+        background-size: 100%;
         background-repeat: no-repeat;
     }
-
     header img {
         width: 8em;
         padding: 1em;
     }
-    
     .mockup img {
         max-width: 100%;
     }
-
     h1 {
         text-align: center;
     }
-
     p {
         text-align: center;
         line-height: 1.5em;
     }
-
     .middle {
         text-align: center;
         padding: 2em 1em 2em 1em;
     }
-
     footer {
         text-align: center;
         font-size: 2em;
+        padding: 1em 0 1em 0;
+    }
+    footer a {
+        color: #fff;
+        text-decoration: none;
+    }
+    footer a:visited {
+        color: #ffffff;
+        text-decoration: none;
     }
 }
