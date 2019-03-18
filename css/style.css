@@ -1,5 +1,19 @@
 body {
     background: rgb(103, 75, 175);
+    background-image: url('/images/bg-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 2em;
+}
+
+header img {
+    width: 10em;
+    padding-bottom: 3em;
+}
+
+.middle {
+    display: flex;
+    flex-direction: row;
 }
 
 h1 {
@@ -7,14 +21,18 @@ h1 {
     color: #ffffff;
 }
 
+.mockup img {
+    width: 100%;
+}
+
+.description {
+    padding-left: 5em;
+}
+
 p {
     font-family: 'Open-Sans', sans-serif;
     color: #ffffff;
     font-weight: 100;
-}
-
-footer {
-    color: #ffffff;
 }
 
 button {
@@ -27,6 +45,20 @@ button {
     font-family: 'Open-Sans', sans-serif;
     color: rgb(103, 75, 175);
     font-size: 1em;
+}
+
+footer {
+    color: #ffffff;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:visited {
+    color: #ffffff;
+    text-decoration: none;
 }
 
 @media only screen and (max-width: 500px) {
@@ -57,13 +89,5 @@ button {
         text-align: center;
         font-size: 2em;
         padding: 1em 0 1em 0;
-    }
-    footer a {
-        color: #fff;
-        text-decoration: none;
-    }
-    footer a:visited {
-        color: #ffffff;
-        text-decoration: none;
     }
 }
