@@ -1,0 +1,111 @@
+body {
+    background: rgb(103, 75, 175);
+    background-image: url(/images/bg-mobile.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+header img {
+    width: 10em;
+    padding: 1em;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2em 1em 2em 1em;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    text-align: center;
+}
+
+.mockupContainer img {
+    max-width: 100%
+}
+
+p {
+    text-align: center;
+    line-height: 1.5em;
+    font-family: 'Open-Sans', sans-serif;
+    color: #ffffff;
+    font-weight: 100;
+}
+
+button {
+    background-color: #ffffff;
+    border-radius: 25em;
+    padding: 1em 6em 1em 6em;
+    box-shadow: 0em 0.2em 0.5em 0em #333333;
+    font-weight: 100;
+    /* Font */
+    font-family: 'Open-Sans', sans-serif;
+    color: rgb(103, 75, 175);
+    font-size: 1em;
+}
+
+footer {
+    text-align: center;
+    padding: 5em 0 1em 0;
+}
+
+footer a {
+    color: #fff;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+footer a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 1024px) {
+    body {
+        background: rgb(103, 75, 175);
+        background-image: url(/images/bg-desktop.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 1em;
+    }
+    header img {
+        width: 12em;
+        padding: 1em;
+    }
+    section {
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        width: 100%;
+    }
+    .mockupContainer {
+        flex: 1;
+        text-align: center;
+        padding-right: 1em;
+        width: 100%;
+    }
+    .descriptionContainer {
+        flex: 1;
+        padding: 0 1em 0 1em;
+    }
+    h1 {
+        font-family: 'Poppins', sans-serif;
+        color: #ffffff;
+        text-align: left;
+        font-size: 2.5em;
+        margin-bottom: 0;
+    }
+    p {
+        text-align: left;
+    }
+    button {
+        padding: 1em 4em 1em 4em;
+    }
+    footer {
+        text-align: right;
+        padding: 0 0 1em 0;
+    }
+}
