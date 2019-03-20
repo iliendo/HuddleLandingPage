@@ -1,38 +1,36 @@
 body {
     background: rgb(103, 75, 175);
-    background-image: url('/images/bg-desktop.svg');
+    background-image: url(/images/bg-mobile.svg);
+    background-size: contain;
     background-repeat: no-repeat;
-    background-size: 100%;
-    padding: 2em;
 }
 
 header img {
-    width: 10em;
-    padding-bottom: 3em;
+    width: 8em;
+    padding: 1em;
 }
 
-.middle {
-    display: flex;
-    flex-direction: row;
+.mockup img {
+    max-width: 100%;
 }
 
 h1 {
     font-family: 'Poppins', sans-serif;
     color: #ffffff;
-}
-
-.mockup img {
-    width: 100%;
-}
-
-.description {
-    padding-left: 5em;
+    text-align: center;
 }
 
 p {
+    text-align: center;
+    line-height: 1.5em;
     font-family: 'Open-Sans', sans-serif;
     color: #ffffff;
     font-weight: 100;
+}
+
+.middle {
+    text-align: center;
+    padding: 2em 1em 2em 1em;
 }
 
 button {
@@ -48,11 +46,13 @@ button {
 }
 
 footer {
-    color: #ffffff;
+    text-align: center;
+    padding: 5em 0 1em 0;
 }
 
 footer a {
     color: #fff;
+    font-size: 2em;
     text-decoration: none;
 }
 
@@ -61,33 +61,4 @@ footer a:visited {
     text-decoration: none;
 }
 
-@media only screen and (max-width: 500px) {
-    body {
-        background-image: url(/images/bg-mobile.svg);
-        background-size: 100%;
-        background-repeat: no-repeat;
-    }
-    header img {
-        width: 8em;
-        padding: 1em;
-    }
-    .mockup img {
-        max-width: 100%;
-    }
-    h1 {
-        text-align: center;
-    }
-    p {
-        text-align: center;
-        line-height: 1.5em;
-    }
-    .middle {
-        text-align: center;
-        padding: 2em 1em 2em 1em;
-    }
-    footer {
-        text-align: center;
-        font-size: 2em;
-        padding: 1em 0 1em 0;
-    }
-}
+@media only screen and (min-width: 500px) {}
